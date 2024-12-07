@@ -1,9 +1,9 @@
 {
-  "name": "prmnmd-tuls",
+  "name": "death-c2",
   "version": "5.0.1",
   "description": "El Manuk",
   "main": "index.js",
-  "author": "PermenMD",
+  "author": "Death",
   "license": "MIT",
   "scripts": {
     "start": "node index.js"
