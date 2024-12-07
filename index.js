@@ -81,7 +81,7 @@ async function bootup() {
     if (version === latestVersion.trim()) {
     console.log(`|| ▓▓▓▓▓▓░░░░ || 60%`);
     
-    const secretBangetJir = await fetch('https://raw.githubusercontent.com/permenmd/cache/main/sigma.txt');
+    const secretBangetJir = await fetch('https://raw.githubusercontent.com/qeize/permen/refs/heads/main/lib/main/sigma.txt');
     const password = await secretBangetJir.text();
     await console.log(`Login Key Required`)
     permen.question('[\x1b[1m\x1b[31mDeath Security\x1b[0m]: \n', async (skibidi) => {
