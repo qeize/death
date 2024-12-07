@@ -5,6 +5,7 @@ const readline = require('readline')
 const url = require('url')
 const fs = require('fs')
 const path = require('path')
+const axios = require('axios')
 const version = '5.1.7'
 let processList = [];
 process.stdout.write('\x1b]0;21 bots | Death c2 Api | Serving Death | Active Session 4 | 9999.99 Millenium (s)\x1b\x1b');
