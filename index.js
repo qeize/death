@@ -4,7 +4,6 @@ const { exec, spawn  } = require('child_process')
 const readline = require('readline')
 const url = require('url')
 const fs = require('fs')
-const axios = require('axios')
 const path = require('path')
 const version = '5.1.7'
 let processList = [];
@@ -20,20 +19,24 @@ function sleep(ms) {
 // [========================================] //
 async function banner() {
 console.clear()
-console.log(`
-          _______  
-         /       /
-___     /   ____/   
-:   :  /   /:        
- :   :/___/  :        
-  :       :   :        
-   :_______:   :    Death C2 Lite ${version}
-           /   /    Owner: Death
-          /   /     Premium: true
-          :  /      WhatsApp: 6285252689486
-           :/       Telegram: @keccy
-                    Portable Tools DDoS By Death
-========================================================================`)}
+console.log(
+  "\x1b[1m\x1b[34mWelcome root , to DeathNetworks\x1b[0m\n" +
+  "\x1b[32m                               \x1b[0m\n" +
+  "\x1b[32m   ⢸⣦⡀    ⢀⡄                   \x1b[0m\n" +
+  "\x1b[32m   ⢸⣏⠻⣶⣤⡶⢾⡿⠁ ⢠⣄⡀⢀⣴             \x1b[0m\n" +
+  "\x1b[32m  ⣀⣼⠷  ⠁⢀⣿⠃  ⢀⣿⣿⣿⣇             \x1b[0m\n" +
+  "\x1b[32m⠴⣾⣯⣅⣀   ⠈⢻⣦⡀⠒⠻⠿⣿⡿⠿⠓⠂  ⢀⡇       \x1b[0m\n" +
+  "\x1b[32m   ⠉⢻⡇⣤⣾⣿⣷⣿⣿⣤  ⣿⠁   ⢀⣴⣿⣿             \x1b[47m\x1b[34mDEATH NETWORKS\x1b[0m\n" +
+  "\x1b[32m    ⠸⣿⡿⠏ ⢀  ⠿⣶⣤⣤⣤⣄⣀⣴⣿⡿⢻⣿⡆            \x1b[32mUSERNAME:\x1b[0m \x1b[34mroot\x1b[0m   \n" +
+  "\x1b[32m     ⠟⠁ ⢀⣼   ⠹⣿⣟⠿⠿⠿⡿⠋ ⠘⣿⣇            \x1b[32mEXPIRY:\x1b[0m \x1b[34m9999.99 Millenium(s)\x1b[0m   \n" +
+  "\x1b[32m     ⢳⣶⣶⣿⣿⣇⣀  ⠙⣿⣆      ⠛⠿⣿⣦⣤⣀        \x1b[32mTIMELIMIT:\x1b[0m \x1b[34m9999.99\x1b[0m   \n" +
+  "\x1b[32m      ⣹⣿⣿⣿⣿⠿⠋⠁ ⣹⣿⠳      ⢀⣠⣽⣿⡿⠟⠃      \x1b[32mVIP:\x1b[0m \x1b[34mtrue\x1b[0m   \n" +
+  "\x1b[32m     ⢰⠿⠛⠻⢿⡇   ⣰⣿⠏  ⢀   ⣾⣿⠟⠋⠁         \x1b[32mCOOLDOWN:\x1b[0m \x1b[34m0\x1b[0m  \n" +
+  "\x1b[32m          ⠋  ⣰⣿⣿⣾⣿⠿⢿⣷⣀⢀⣿⡇⠁     \x1b[0m\n" +
+  "\x1b[32m             ⠋⠉⠁    ⠙⢿⣿⣿⠇      \x1b[0m\n" +
+  "\x1b[32m                      ⠙⢿       \x1b[0m\n" +
+  "\x1b[32m                       ⠈       \x1b[0m"
+)}
 // [========================================] //
 async function scrapeProxy() {
   try {
@@ -81,7 +84,7 @@ async function bootup() {
     const secretBangetJir = await fetch('https://raw.githubusercontent.com/permenmd/cache/main/sigma.txt');
     const password = await secretBangetJir.text();
     await console.log(`Login Key Required`)
-    permen.question('[\x1b[1m\x1b[31mPermenMD Security\x1b[0m]: \n', async (skibidi) => {
+    permen.question('[\x1b[1m\x1b[31mDeath Security\x1b[0m]: \n', async (skibidi) => {
       if (skibidi === password.trim()) {
         console.log(`Successfuly Logged`)
         await scrapeProxy()
@@ -90,10 +93,10 @@ async function bootup() {
         console.log(`|| ▓▓▓▓▓▓▓▓▓▓ || 100%`)
         await sleep(700)
         console.clear()
-        console.log(`Welcome To PermenMD Tools ${version}`)
+        console.log(`Welcome to Death C2 ${version}`)
         await sleep(1000)
 		    await banner()
-        console.log(`Type "help" For Showing All Available Command`)
+        console.log(`\x1b[1m\x1b[34mGuide: Enter 'help' to start / Enter 'methods' to see all methods\x1b[0m\n`)
         sigma()
       } else {
         console.log(`Wrong Key`)
@@ -121,7 +124,7 @@ console.log(`
 WiFi Killer Has Started
 Type exit To Stop
 `);
-permen.question('[\x1b[1m\x1b[31mPermenMD Wifi Killer\x1b[0m]: \n', async (yakin) => {
+permen.question('[\x1b[1m\x1b[31mDeath Wifi Killer\x1b[0m]: \n', async (yakin) => {
 if (yakin === 'exit') {
   startKillwiFi.kill('SIGKILL')
   console.log(`WiFi Killer Has Ended`)
@@ -153,13 +156,21 @@ const ipInfo = await response.json();
 
     console.clear()
     console.log(`
-██████╗ ███████╗██████╗ ███╗   ███╗███████╗███╗   ██╗███╗   ███╗██████╗
-██╔══██╗██╔════╝██╔══██╗████╗ ████║██╔════╝████╗  ██║████╗ ████║██╔══██╗
-██████╔╝█████╗  ██████╔╝██╔████╔██║█████╗  ██╔██╗ ██║██╔████╔██║██║  ██║
-██╔═══╝ ██╔══╝  ██╔══██╗██║╚██╔╝██║██╔══╝  ██║╚██╗██║██║╚██╔╝██║██║  ██║
-██║     ███████╗██║  ██║██║ ╚═╝ ██║███████╗██║ ╚████║██║ ╚═╝ ██║██████╔╝
-╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝╚═╝     ╚═╝╚═════╝
-                      Tracking IP Address Result 
+⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴
+⠸⣿⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿
+⠀⢻⣿⣿⣿⣦⡀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿
+⠀⠀⢻⣿⣿⣿⣿⣦⡀⠀⠀⠀⠀⣾⣿⣿⣿⡇
+⠀⠀⠀⠙⢿⣿⣿⣿⣷⣄⠀⠀⢰⣿⣿⣿⣿⠇
+⠀⠀⠀⠀⠀⠙⠿⣿⣿⣿⣦⡀⢸⣿⣿⣿⡟⠀
+⠀⠀⠀⠀⠀⠀⠀⠈⢙⣛⣿⣷⣸⣿⣿⠟⠀⠀
+⠀⠀⠀⠀⢀⣠⣶⣿⣿⣿⣿⣿⣿⣿⣧⡀⠀⠀
+⠀⠀⠀⢠⣿⣿⡀⢀⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀
+⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠄⠀
+⠀⠀⠀⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀
+⠀⠀⠀⠀⠈⠛⠿⢿⣿⣿⣿⣿⣿⣿⣿⡿⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢸⣿⠿⢻⣿⡿⠟⠋⠁⠀⠀
+⠀⠀⠀⠀⠀⢸⣶⣬⣴⣿⢈⣤⠴⠖⠛⠁⠀⠀
+⠀⠀⠀⠀⠀⠈⠉⠀⠙⠻⠀⠀⠀⠀⠀⠀⠀⠀                      Tracking IP Address Result 
 ========================================================================
  - Flags: ${ipInfo.country_flag}
  - Country: ${ipInfo.country_name}
@@ -217,13 +228,21 @@ const result = scrape.data;
 
 console.clear()
 console.log(`
-██████╗ ███████╗██████╗ ███╗   ███╗███████╗███╗   ██╗███╗   ███╗██████╗
-██╔══██╗██╔════╝██╔══██╗████╗ ████║██╔════╝████╗  ██║████╗ ████║██╔══██╗
-██████╔╝█████╗  ██████╔╝██╔████╔██║█████╗  ██╔██╗ ██║██╔████╔██║██║  ██║
-██╔═══╝ ██╔══╝  ██╔══██╗██║╚██╔╝██║██╔══╝  ██║╚██╗██║██║╚██╔╝██║██║  ██║
-██║     ███████╗██║  ██║██║ ╚═╝ ██║███████╗██║ ╚████║██║ ╚═╝ ██║██████╔╝
-╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝╚═╝     ╚═╝╚═════╝
-                      Attack Has Been Launched
+⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴
+⠸⣿⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿
+⠀⢻⣿⣿⣿⣦⡀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿
+⠀⠀⢻⣿⣿⣿⣿⣦⡀⠀⠀⠀⠀⣾⣿⣿⣿⡇
+⠀⠀⠀⠙⢿⣿⣿⣿⣷⣄⠀⠀⢰⣿⣿⣿⣿⠇
+⠀⠀⠀⠀⠀⠙⠿⣿⣿⣿⣦⡀⢸⣿⣿⣿⡟⠀
+⠀⠀⠀⠀⠀⠀⠀⠈⢙⣛⣿⣷⣸⣿⣿⠟⠀⠀
+⠀⠀⠀⠀⢀⣠⣶⣿⣿⣿⣿⣿⣿⣿⣧⡀⠀⠀
+⠀⠀⠀⢠⣿⣿⡀⢀⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀
+⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠄⠀
+⠀⠀⠀⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀
+⠀⠀⠀⠀⠈⠛⠿⢿⣿⣿⣿⣿⣿⣿⣿⡿⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢸⣿⠿⢻⣿⡿⠟⠋⠁⠀⠀
+⠀⠀⠀⠀⠀⢸⣶⣬⣴⣿⢈⣤⠴⠖⠛⠁⠀⠀
+⠀⠀⠀⠀⠀⠈⠉⠀⠙⠻⠀⠀⠀⠀⠀⠀⠀⠀                      Attack Has Been Launched
 ========================================================================
 Target   : ${target}
 Duration : ${duration}
@@ -328,13 +347,21 @@ const result = scrape.data;
 
 console.clear()
 console.log(`
-██████╗ ███████╗██████╗ ███╗   ███╗███████╗███╗   ██╗███╗   ███╗██████╗
-██╔══██╗██╔════╝██╔══██╗████╗ ████║██╔════╝████╗  ██║████╗ ████║██╔══██╗
-██████╔╝█████╗  ██████╔╝██╔████╔██║█████╗  ██╔██╗ ██║██╔████╔██║██║  ██║
-██╔═══╝ ██╔══╝  ██╔══██╗██║╚██╔╝██║██╔══╝  ██║╚██╗██║██║╚██╔╝██║██║  ██║
-██║     ███████╗██║  ██║██║ ╚═╝ ██║███████╗██║ ╚████║██║ ╚═╝ ██║██████╔╝
-╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝╚═╝     ╚═╝╚═════╝
-                    SSH Killer Has Been Launched
+⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴
+⠸⣿⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿
+⠀⢻⣿⣿⣿⣦⡀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿
+⠀⠀⢻⣿⣿⣿⣿⣦⡀⠀⠀⠀⠀⣾⣿⣿⣿⡇
+⠀⠀⠀⠙⢿⣿⣿⣿⣷⣄⠀⠀⢰⣿⣿⣿⣿⠇
+⠀⠀⠀⠀⠀⠙⠿⣿⣿⣿⣦⡀⢸⣿⣿⣿⡟⠀
+⠀⠀⠀⠀⠀⠀⠀⠈⢙⣛⣿⣷⣸⣿⣿⠟⠀⠀
+⠀⠀⠀⠀⢀⣠⣶⣿⣿⣿⣿⣿⣿⣿⣧⡀⠀⠀
+⠀⠀⠀⢠⣿⣿⡀⢀⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀
+⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠄⠀
+⠀⠀⠀⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀
+⠀⠀⠀⠀⠈⠛⠿⢿⣿⣿⣿⣿⣿⣿⣿⡿⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢸⣿⠿⢻⣿⡿⠟⠋⠁⠀⠀
+⠀⠀⠀⠀⠀⢸⣶⣬⣴⣿⢈⣤⠴⠖⠛⠁⠀⠀
+⠀⠀⠀⠀⠀⠈⠉⠀⠙⠻⠀⠀⠀⠀⠀⠀⠀⠀                    SSH Killer Has Been Launched
 ========================================================================
 Target   : ${target}
 Duration : ${duration}
@@ -362,13 +389,21 @@ const [target, duration] = args
 try {
 console.clear()
 console.log(`
-██████╗ ███████╗██████╗ ███╗   ███╗███████╗███╗   ██╗███╗   ███╗██████╗
-██╔══██╗██╔════╝██╔══██╗████╗ ████║██╔════╝████╗  ██║████╗ ████║██╔══██╗
-██████╔╝█████╗  ██████╔╝██╔████╔██║█████╗  ██╔██╗ ██║██╔████╔██║██║  ██║
-██╔═══╝ ██╔══╝  ██╔══██╗██║╚██╔╝██║██╔══╝  ██║╚██╗██║██║╚██╔╝██║██║  ██║
-██║     ███████╗██║  ██║██║ ╚═╝ ██║███████╗██║ ╚████║██║ ╚═╝ ██║██████╔╝
-╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝╚═╝     ╚═╝╚═════╝
-                    OTP Killer Has Been Launched
+⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴
+⠸⣿⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿
+⠀⢻⣿⣿⣿⣦⡀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿
+⠀⠀⢻⣿⣿⣿⣿⣦⡀⠀⠀⠀⠀⣾⣿⣿⣿⡇
+⠀⠀⠀⠙⢿⣿⣿⣿⣷⣄⠀⠀⢰⣿⣿⣿⣿⠇
+⠀⠀⠀⠀⠀⠙⠿⣿⣿⣿⣦⡀⢸⣿⣿⣿⡟⠀
+⠀⠀⠀⠀⠀⠀⠀⠈⢙⣛⣿⣷⣸⣿⣿⠟⠀⠀
+⠀⠀⠀⠀⢀⣠⣶⣿⣿⣿⣿⣿⣿⣿⣧⡀⠀⠀
+⠀⠀⠀⢠⣿⣿⡀⢀⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀
+⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠄⠀
+⠀⠀⠀⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀
+⠀⠀⠀⠀⠈⠛⠿⢿⣿⣿⣿⣿⣿⣿⣿⡿⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢸⣿⠿⢻⣿⡿⠟⠋⠁⠀⠀
+⠀⠀⠀⠀⠀⢸⣶⣬⣴⣿⢈⣤⠴⠖⠛⠁⠀⠀
+⠀⠀⠀⠀⠀⠈⠉⠀⠙⠻⠀⠀⠀⠀⠀⠀⠀⠀                    OTP Killer Has Been Launched
 ========================================================================
 Target   : ${target}
 Duration : ${duration}
@@ -394,18 +429,26 @@ const [target, duration] = args
 try {
 console.clear()
 console.log(`
-██████╗ ███████╗██████╗ ███╗   ███╗███████╗███╗   ██╗███╗   ███╗██████╗
-██╔══██╗██╔════╝██╔══██╗████╗ ████║██╔════╝████╗  ██║████╗ ████║██╔══██╗
-██████╔╝█████╗  ██████╔╝██╔████╔██║█████╗  ██╔██╗ ██║██╔████╔██║██║  ██║
-██╔═══╝ ██╔══╝  ██╔══██╗██║╚██╔╝██║██╔══╝  ██║╚██╗██║██║╚██╔╝██║██║  ██║
-██║     ███████╗██║  ██║██║ ╚═╝ ██║███████╗██║ ╚████║██║ ╚═╝ ██║██████╔╝
-╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝╚═╝     ╚═╝╚═════╝
-                    VPS Killer Has Been Launched
+⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴
+⠸⣿⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿
+⠀⢻⣿⣿⣿⣦⡀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿
+⠀⠀⢻⣿⣿⣿⣿⣦⡀⠀⠀⠀⠀⣾⣿⣿⣿⡇
+⠀⠀⠀⠙⢿⣿⣿⣿⣷⣄⠀⠀⢰⣿⣿⣿⣿⠇
+⠀⠀⠀⠀⠀⠙⠿⣿⣿⣿⣦⡀⢸⣿⣿⣿⡟⠀
+⠀⠀⠀⠀⠀⠀⠀⠈⢙⣛⣿⣷⣸⣿⣿⠟⠀⠀
+⠀⠀⠀⠀⢀⣠⣶⣿⣿⣿⣿⣿⣿⣿⣧⡀⠀⠀
+⠀⠀⠀⢠⣿⣿⡀⢀⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀
+⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠄⠀
+⠀⠀⠀⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀
+⠀⠀⠀⠀⠈⠛⠿⢿⣿⣿⣿⣿⣿⣿⣿⡿⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢸⣿⠿⢻⣿⡿⠟⠋⠁⠀⠀
+⠀⠀⠀⠀⠀⢸⣶⣬⣴⣿⢈⣤⠴⠖⠛⠁⠀⠀
+⠀⠀⠀⠀⠀⠈⠉⠀⠙⠻⠀⠀⠀⠀⠀⠀⠀⠀                    VPS Killer Has Been Launched
 ========================================================================
 Target   : ${target}
 Duration : ${duration}
 Methods  : Digital Ocean Killer
-Creator  : PermenMD`)
+Creator  : Death`)
 } catch (error) {
   console.log(`Oops Something Went Wrong`)
 }
@@ -429,18 +472,26 @@ const [target, port, duration] = args
 try {
 console.clear()
 console.log(`
-██████╗ ███████╗██████╗ ███╗   ███╗███████╗███╗   ██╗███╗   ███╗██████╗
-██╔══██╗██╔════╝██╔══██╗████╗ ████║██╔════╝████╗  ██║████╗ ████║██╔══██╗
-██████╔╝█████╗  ██████╔╝██╔████╔██║█████╗  ██╔██╗ ██║██╔████╔██║██║  ██║
-██╔═══╝ ██╔══╝  ██╔══██╗██║╚██╔╝██║██╔══╝  ██║╚██╗██║██║╚██╔╝██║██║  ██║
-██║     ███████╗██║  ██║██║ ╚═╝ ██║███████╗██║ ╚████║██║ ╚═╝ ██║██████╔╝
-╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝╚═╝     ╚═╝╚═════╝
-                    UDP Raw Flood Attack Launched
+⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴
+⠸⣿⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿
+⠀⢻⣿⣿⣿⣦⡀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿
+⠀⠀⢻⣿⣿⣿⣿⣦⡀⠀⠀⠀⠀⣾⣿⣿⣿⡇
+⠀⠀⠀⠙⢿⣿⣿⣿⣷⣄⠀⠀⢰⣿⣿⣿⣿⠇
+⠀⠀⠀⠀⠀⠙⠿⣿⣿⣿⣦⡀⢸⣿⣿⣿⡟⠀
+⠀⠀⠀⠀⠀⠀⠀⠈⢙⣛⣿⣷⣸⣿⣿⠟⠀⠀
+⠀⠀⠀⠀⢀⣠⣶⣿⣿⣿⣿⣿⣿⣿⣧⡀⠀⠀
+⠀⠀⠀⢠⣿⣿⡀⢀⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀
+⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠄⠀
+⠀⠀⠀⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀
+⠀⠀⠀⠀⠈⠛⠿⢿⣿⣿⣿⣿⣿⣿⣿⡿⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢸⣿⠿⢻⣿⡿⠟⠋⠁⠀⠀
+⠀⠀⠀⠀⠀⢸⣶⣬⣴⣿⢈⣤⠴⠖⠛⠁⠀⠀
+⠀⠀⠀⠀⠀⠈⠉⠀⠙⠻⠀⠀⠀⠀⠀⠀⠀⠀                    UDP Raw Flood Attack Launched
 ========================================================================
 Target   : ${target}
 Duration : ${duration}
 Methods  : UDP Raw
-Creator  : PermenMD`)
+Creator  : Death`)
 } catch (error) {
   console.log(`Oops Something Went Wrong`)
 }
@@ -461,18 +512,26 @@ const [target, port, duration] = args
 try {
 console.clear()
 console.log(`
-██████╗ ███████╗██████╗ ███╗   ███╗███████╗███╗   ██╗███╗   ███╗██████╗
-██╔══██╗██╔════╝██╔══██╗████╗ ████║██╔════╝████╗  ██║████╗ ████║██╔══██╗
-██████╔╝█████╗  ██████╔╝██╔████╔██║█████╗  ██╔██╗ ██║██╔████╔██║██║  ██║
-██╔═══╝ ██╔══╝  ██╔══██╗██║╚██╔╝██║██╔══╝  ██║╚██╗██║██║╚██╔╝██║██║  ██║
-██║     ███████╗██║  ██║██║ ╚═╝ ██║███████╗██║ ╚████║██║ ╚═╝ ██║██████╔╝
-╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝╚═╝     ╚═╝╚═════╝
-                   Minecraft Flood Attack Launched
+⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴
+⠸⣿⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿
+⠀⢻⣿⣿⣿⣦⡀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿
+⠀⠀⢻⣿⣿⣿⣿⣦⡀⠀⠀⠀⠀⣾⣿⣿⣿⡇
+⠀⠀⠀⠙⢿⣿⣿⣿⣷⣄⠀⠀⢰⣿⣿⣿⣿⠇
+⠀⠀⠀⠀⠀⠙⠿⣿⣿⣿⣦⡀⢸⣿⣿⣿⡟⠀
+⠀⠀⠀⠀⠀⠀⠀⠈⢙⣛⣿⣷⣸⣿⣿⠟⠀⠀
+⠀⠀⠀⠀⢀⣠⣶⣿⣿⣿⣿⣿⣿⣿⣧⡀⠀⠀
+⠀⠀⠀⢠⣿⣿⡀⢀⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀
+⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠄⠀
+⠀⠀⠀⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀
+⠀⠀⠀⠀⠈⠛⠿⢿⣿⣿⣿⣿⣿⣿⣿⡿⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢸⣿⠿⢻⣿⡿⠟⠋⠁⠀⠀
+⠀⠀⠀⠀⠀⢸⣶⣬⣴⣿⢈⣤⠴⠖⠛⠁⠀⠀
+⠀⠀⠀⠀⠀⠈⠉⠀⠙⠻⠀⠀⠀⠀⠀⠀⠀⠀                   Minecraft Flood Attack Launched
 ========================================================================
 Target   : ${target}
 Duration : ${duration}
 Methods  : Minecraft Flooder
-Creator  : PermenMD`)
+Creator  : Death`)
 } catch (error) {
   console.log(`Oops Something Went Wrong`)
     sigma()
@@ -494,18 +553,26 @@ const [target, port, duration] = args
 try {
 console.clear()
 console.log(`
-██████╗ ███████╗██████╗ ███╗   ███╗███████╗███╗   ██╗███╗   ███╗██████╗
-██╔══██╗██╔════╝██╔══██╗████╗ ████║██╔════╝████╗  ██║████╗ ████║██╔══██╗
-██████╔╝█████╗  ██████╔╝██╔████╔██║█████╗  ██╔██╗ ██║██╔████╔██║██║  ██║
-██╔═══╝ ██╔══╝  ██╔══██╗██║╚██╔╝██║██╔══╝  ██║╚██╗██║██║╚██╔╝██║██║  ██║
-██║     ███████╗██║  ██║██║ ╚═╝ ██║███████╗██║ ╚████║██║ ╚═╝ ██║██████╔╝
-╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝╚═╝     ╚═╝╚═════╝
-                    SA MP Flood Attack Launched
+⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴
+⠸⣿⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿
+⠀⢻⣿⣿⣿⣦⡀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿
+⠀⠀⢻⣿⣿⣿⣿⣦⡀⠀⠀⠀⠀⣾⣿⣿⣿⡇
+⠀⠀⠀⠙⢿⣿⣿⣿⣷⣄⠀⠀⢰⣿⣿⣿⣿⠇
+⠀⠀⠀⠀⠀⠙⠿⣿⣿⣿⣦⡀⢸⣿⣿⣿⡟⠀
+⠀⠀⠀⠀⠀⠀⠀⠈⢙⣛⣿⣷⣸⣿⣿⠟⠀⠀
+⠀⠀⠀⠀⢀⣠⣶⣿⣿⣿⣿⣿⣿⣿⣧⡀⠀⠀
+⠀⠀⠀⢠⣿⣿⡀⢀⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀
+⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠄⠀
+⠀⠀⠀⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀
+⠀⠀⠀⠀⠈⠛⠿⢿⣿⣿⣿⣿⣿⣿⣿⡿⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢸⣿⠿⢻⣿⡿⠟⠋⠁⠀⠀
+⠀⠀⠀⠀⠀⢸⣶⣬⣴⣿⢈⣤⠴⠖⠛⠁⠀⠀
+⠀⠀⠀⠀⠀⠈⠉⠀⠙⠻⠀⠀⠀⠀⠀⠀⠀⠀                    SA MP Flood Attack Launched
 ========================================================================
 Target   : ${target}
 Duration : ${duration}
 Methods  : SAMP Flooder
-Creator  : PermenMD`)
+Creator  : Death`)
 } catch (error) {
   console.log(`Oops Something Went Wrong`)
     sigma()
@@ -530,13 +597,21 @@ return `${data}`;
 }).join('\n');
 console.clear()
 console.log(`
-██████╗ ███████╗██████╗ ███╗   ███╗███████╗███╗   ██╗███╗   ███╗██████╗
-██╔══██╗██╔════╝██╔══██╗████╗ ████║██╔════╝████╗  ██║████╗ ████║██╔══██╗
-██████╔╝█████╗  ██████╔╝██╔████╔██║█████╗  ██╔██╗ ██║██╔████╔██║██║  ██║
-██╔═══╝ ██╔══╝  ██╔══██╗██║╚██╔╝██║██╔══╝  ██║╚██╗██║██║╚██╔╝██║██║  ██║
-██║     ███████╗██║  ██║██║ ╚═╝ ██║███████╗██║ ╚████║██║ ╚═╝ ██║██████╔╝
-╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝╚═╝     ╚═╝╚═════╝
-                        Subdomains Finder
+⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴
+⠸⣿⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿
+⠀⢻⣿⣿⣿⣦⡀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿
+⠀⠀⢻⣿⣿⣿⣿⣦⡀⠀⠀⠀⠀⣾⣿⣿⣿⡇
+⠀⠀⠀⠙⢿⣿⣿⣿⣷⣄⠀⠀⢰⣿⣿⣿⣿⠇
+⠀⠀⠀⠀⠀⠙⠿⣿⣿⣿⣦⡀⢸⣿⣿⣿⡟⠀
+⠀⠀⠀⠀⠀⠀⠀⠈⢙⣛⣿⣷⣸⣿⣿⠟⠀⠀
+⠀⠀⠀⠀⢀⣠⣶⣿⣿⣿⣿⣿⣿⣿⣧⡀⠀⠀
+⠀⠀⠀⢠⣿⣿⡀⢀⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀
+⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠄⠀
+⠀⠀⠀⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀
+⠀⠀⠀⠀⠈⠛⠿⢿⣿⣿⣿⣿⣿⣿⣿⡿⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢸⣿⠿⢻⣿⡿⠟⠋⠁⠀⠀
+⠀⠀⠀⠀⠀⢸⣶⣬⣴⣿⢈⣤⠴⠖⠛⠁⠀⠀
+⠀⠀⠀⠀⠀⠈⠉⠀⠙⠻⠀⠀⠀⠀⠀⠀⠀⠀                        Subdomains Finder
 ========================================================================
 ${hasilmanuk}`)
 } catch (error) {
@@ -547,7 +622,7 @@ sigma()
 };
 // [========================================] //
 async function chat_ai() {
-permen.question('[\x1b[1m\x1b[31mPermenMD Chat AI\x1b[0m]: \n', async (yakin) => {
+permen.question('[\x1b[1m\x1b[31mDeath Chat AI\x1b[0m]: \n', async (yakin) => {
 if (yakin === 'exit') {
   console.log(`Chat Ai Has Ended`)
   sigma()
@@ -570,22 +645,20 @@ async function sigma() {
 const getNews = await fetch(`https://raw.githubusercontent.com/permenmd/cache/main/news.txt`)
 const latestNews = await getNews.text();
 const creatorCredits = `
-Created And Coded Full By PermenMD
+Created And Coded Full By Death
 
 Thx To:
 ChatGPT ( Fixing Error )
-IrfanNotSepuh ( Gatau Ngapain )
-Member And User ( Ga Buat Yang Dapet Gratis )
-My Family
-PLN Dan Wifi
+Sultan & Samsul ( Gatau Ngapain )
+Member And User
 Github
-YouTube ( Music )
 Allah SWT
 `
-permen.question('[\x1b[1m\x1b[32mPermenMD Console\x1b[0m]: \n', (input) => {
+permen.question('\x1b[47m\x1b[34mroot@deathc2\x1b[0m: ', (input) => {
   const [command, ...args] = input.trim().split(/\s+/);
 
   if (command === 'help') {
+    console.clear()
     console.log(`
 | methods      | show list of available methods
 | track-ip     | track ip address with info
@@ -593,20 +666,21 @@ permen.question('[\x1b[1m\x1b[32mPermenMD Console\x1b[0m]: \n', (input) => {
 | kill-wifi    | kill your wifi (termux/linux/windows only)
 | kill-ssh     | kill VPS Access 
 | kill-otp     | kill WhatsApp OTP Verification
-| kill-ping    | sending death pinger
+| kill-ping    | sending Death pinger
 | samp         | S.A.M.P Flooder
 | mc-flood     | Minecraft Bot Flooder
 | attack       | launch ddos attack
 | udp-raw      | launch udp flood attack
 | kill-do      | digital ocean killer
 | ongoing      | show ongoing attack
-| news         | show latest permenmd news
+| news         | show latest death news
 | ai           | Chat With Ai
 | credits      | show creator of these tools
 | clear        | clear terminal
 `);
     sigma();
   } else if (command === 'methods') {
+    console.clear()
     console.log(`
 [=========================================]
 || flood      || HTTP(s) Flood DoS
@@ -629,10 +703,12 @@ permen.question('[\x1b[1m\x1b[32mPermenMD Console\x1b[0m]: \n', (input) => {
 `);
     sigma();
   } else if (command === 'news') {
+    console.clear()
     console.log(`
 ${latestNews}`);
     sigma();
   } else if (command === 'credits') {
+    console.clear()
     console.log(`
 ${creatorCredits}`);
     sigma();
@@ -652,7 +728,7 @@ ${creatorCredits}`);
   } else if (command === 'track-ip') {
     trackIP(args);
   } else if (command === 'ai') {
-    console.log(`PermenMD Ai Ragbot Started
+    console.log(`Death Ai Started
 Type "exit" To Stop Chat`);
     chat_ai()
   } else if (command === 'mc-flood') {
