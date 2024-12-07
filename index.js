@@ -7,6 +7,7 @@ const fs = require('fs')
 const path = require('path')
 const version = '5.1.7'
 let processList = [];
+process.stdout.write('\x1b]0;21 bots | Death c2 Api | Serving Death | Active Session 4 | 9999.99 Millenium (s)\x1b\x1b');
 
 const permen = readline.createInterface({
   input: process.stdin,
