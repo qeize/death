@@ -15,12 +15,13 @@
 
 ## Language</br>
 
+<img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white"/>
  <img src="https://img.shields.io/badge/Python-FFDD00?style=for-the-badge&logo=python&logoColor=blue"/>
-<img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white"/></br>
+</br>
 </div>
 
 ## Menu
-![karma](https://user-images.githubusercontent.com/87601386/165147097-7f6f4f6d-f9fd-4a53-b3fa-a16fe739e963.png)
+![death](https://i.top4top.io/p_3322tyc8a0.jpg)
 
 ## Methods
 
