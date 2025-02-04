@@ -4,7 +4,7 @@
  <p>
  <img src="https://img.shields.io/github/stars/qeize/death?color=%23DF0067&style=for-the-badge"/> &nbsp;
  <img src="https://img.shields.io/github/forks/qeize/death?color=%239999FF&style=for-the-badge"/> &nbsp;
- <img src="https://img.shields.io/github/license/qeize/death?color=%23E8E8E8&style=for-the-badge"/> &nbsp;
+ <img src="https://img.shields.io/github/license/qeize/death"/> &nbsp;
  
 <p><b>DDoS Script (DDoS Panel) - Ultimate Multi-Bypass Tool</b></p>  
 </p>
