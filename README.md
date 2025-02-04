@@ -98,3 +98,19 @@ Use DDoS Panel   : node index.js
 Use command line : attack <method> <target> <time>
       └──────────> attack kill  https://example.com 300
 ```
+
+## Donate Me
+<br/>  
+
+<div align="center">
+            <a href="https://saweria.co/veccy" target="_blank" style="display: inline-block;">
+                <img
+                    src="https://img.shields.io/badge/Donate-Buy%20Me%20A%20Coffee-orange.svg?style=flat-square&logo=buymeacoffee" 
+                    align="center"
+                />
+            </a></div>
+<br />
+
+----
+<div align="center">Copyright <a href="https://veccy.my.id" target="_blank">Veccy</a> © 2020-2025</div>
+
