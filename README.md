@@ -15,7 +15,8 @@
 
 ## Language</br>
 
- <img src="https://img.shields.io/badge/Python-FFDD00?style=for-the-badge&logo=python&logoColor=blue"/></br>
+ <img src="https://img.shields.io/badge/Python-FFDD00?style=for-the-badge&logo=python&logoColor=blue"/>
+<img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white"/></br>
 </div>
 
 ## Menu
@@ -75,7 +76,7 @@
 https://github.com/qeize/tools
 
 ## Videos
-[![](https://user-images.githubusercontent.com/87601386/161339371-b6dfaa8f-1cf2-41d1-85c1-d82cdd98def1.png)](https://www.youtube.com/watch?v=MPKdfhPeLeE)
+[![](https://i.top4top.io/p_3322cbnkl2.jpg)](https://www.youtube.com/@qeiz)
 
 ## Usage on Linux
 ```sh
