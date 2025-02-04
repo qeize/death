@@ -7,15 +7,16 @@
  <img src="https://img.shields.io/github/license/qeize/death?color=%23E8E8E8&style=for-the-badge"/> &nbsp;
  
 <p><b>DDoS Script (DDoS Panel) - Ultimate Multi-Bypass Tool</b></p>  
-<p>Bypass multiple protections with advanced attack methods:</p>  
-<p>(Cloudflare UAM, CAPTCHA, BFM, NoSec / DDoS Guard / Google Shield / V Shield / Amazon & more)</p>  
+Bypass multiple protections with advanced attack methods: 
+(Cloudflare UAM, CAPTCHA, BFM, NoSec / DDoS Guard / Google Shield / V Shield / Amazon & more)
 
-<p><b>⚠ Disclaimer:</b></p>  
+<p>⚠ Disclaimer:</p>  
 - Use only for testing on your own systems.
 - Created for educational and cybersecurity research purposes. 
 - The user is fully responsible for any misuse.
-
-<p><b>🚀 Need an update?</b></p>If a method is not working, update it easily—we’ve got you covered!
+ 
+<p>🚀 Need an update?</p>
+If a method is not working, update it easily—we’ve got you covered!
  
 
 ## Language</br>
