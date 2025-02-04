@@ -24,57 +24,77 @@
 ## Methods
 
 ```sh
-  [Layer 7]
- - cfb     | Bypass CF attack
- - pxcfb   | Bypass CF attack with proxy
- - cfreq   | Bypass CF UAM, CAPTCHA, BFM, etc,, with request
- - cfsoc   | Bypass CF UAM, CAPTCHA, BFM, etc,, with socket
- - pxsky   | Bypass Google Project Shield, Vshield, DDoS Guard Free, CF NoSec With Proxy
- - sky     | Sky method without proxy
- - http2   | HTTP 2.0 Request Attack 
- = pxhttp2 | HTTP 2.0 Request Attack With Proxy
- - spoof   | Spoof Attasck
- - pxspoof | Spoof Attack with Proxy
- - get     | Get  Request Attack
- - post    | Post Request Attack
- - head    | Head Request Attack
- - soc     | Socket Attack
- - pxraw   | Proxy Request Attack
- - pxsoc   | Proxy Socket Attack
- 
-  [Layer 4]
-  -udp     | UDP Attack
-  -tcp     | TCP Attack
-  
-  [Tools]
- - Dns     | Classic DNS Lookup
- - Geoip   | Geo IP Address Lookup
- - Subnet  | Subnet IP Address Lookup
+[Layer 7]  
+ - flood      | HTTP(s) Flood DoS  
+ - tls        | TLS 1.3 Attack  
+ - strike     | Best DDoS method  
+ - kill       | Cloudflare bypass attack  
+ - raw        | High RPS attack  
+ - bypass     | Powerful bypass method 
+ - thunder    | Massive power attack  
+ - storm      | High request flooding  
+ - rape       | Protection bypass  
+ - destroy    | Socket killer  
+ - slim       | Stealth attack  
+ - cf         | Cloudflare strong attack  
+ - layer-7    | Amazon, CF, and others down  
+ - http-ddos  | High RPS / Bypass HTTP DDoS  
+ - reset      | Bypass HTTP DDoS, UAM, JS, NoSec  
+ - lezkill    | Amazon & CF down attack  
+ - lezbypass  | Premium bypass method  
+ - lizard     | Ultimate bypass method 
+ - mix        | Mixed attack  
+ - mixv2      | Mixed attack v2  
+ - glory      | Champion’s attack  
+
+  [Layer 4]  
+ - methods      | Show available attack methods  
+ - track-ip     | Track IP details  
+ - subdo-finder | Find subdomains  
+ - kill-wifi    | Disable WiFi (Termux/Linux/Windows)  
+ - kill-ssh     | Terminate VPS access 
+ - kill-otp     | Disable WhatsApp OTP 
+ - kill-ping    | Death pinger attack  
+ - samp         | S.A.M.P Flooder  
+ - mc-flood     | Minecraft bot flooder  
+ - attack       | Launch DDoS attack  
+ - udp-raw      | UDP flood attack  
+ - kill-do      | Digital Ocean killer 
+ - ongoing      | Show active attacks  
+
+  [Tools]  
+ - news      | Latest attack news  
+ - ai        | Chat with AI  
+ - uagen     | Generate UserAgent
+ - proxygen  | Proxy scraper
+ - credits   | Show tool creators  
+ - clear     | Clear terminal
 ```
+
+## Method Update
+https://github.com/qeize/tools
 
 ## Videos
 [![](https://user-images.githubusercontent.com/87601386/161339371-b6dfaa8f-1cf2-41d1-85c1-d82cdd98def1.png)](https://www.youtube.com/watch?v=MPKdfhPeLeE)
 
 ## Usage on Linux
 ```sh
-You must use Python 3.9 or higher
+You must use NodeJs 18 or higher
 
-git clone https://github.com/HyukIsBack/KARMA-DDoS.git
+git clone https://github.com/qeize/death
 
-Install Python3 modules
- - pip3 install -r requirements.txt  or  pip install -r requirements.txt
+Install NodeJs modules
+ - npm i or npm i axios 
 Install Chrome (or update it lastest version)
- - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
- - apt-get install ./google-chrome-stable_current_amd64.deb
 
 OR
- - python3 setup.py
+ - npm start or node index.js
 
 ```
 
 ## Example
 ```sh
-Use DDoS Panel   : python3 main.py
-Use command line : python3 main.py <method> <target> <thread> <time>
-      └──────────> python3 main.py cfb https://example.com 100 30
+Use DDoS Panel   : node index.js
+Use command line : attack <method> <target> <time>
+      └──────────> attack kill  https://example.com 300
 ```
