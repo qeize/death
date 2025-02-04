@@ -35,16 +35,13 @@
  - raw        | High RPS attack  
  - bypass     | Powerful bypass method 
  - thunder    | Massive power attack  
- - storm      | High request flooding  
+ - storm      | High request flooding 
  - rape       | Protection bypass  
  - destroy    | Socket killer  
- - slim       | Stealth attack  
  - cf         | Cloudflare strong attack  
  - layer-7    | Amazon, CF, and others down  
  - http-ddos  | High RPS / Bypass HTTP DDoS  
- - reset      | Bypass HTTP DDoS, UAM, JS, NoSec  
- - lezkill    | Amazon & CF down attack  
- - lezbypass  | Premium bypass method  
+ - reset      | Bypass HTTP DDoS, UAM, JS, NoSec    
  - lizard     | Ultimate bypass method 
  - mix        | Mixed attack  
  - mixv2      | Mixed attack v2  
