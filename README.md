@@ -16,7 +16,7 @@
 
 ## Language</br>
 
-<img src="https://shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=black$style=flat"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000"/>
 <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white"/>
  <img src="https://img.shields.io/badge/Python-FFDD00?style=for-the-badge&logo=python&logoColor=blue"/>
 </br>
