@@ -12,7 +12,6 @@
  Don't attack any websites you don't own it<br/>
  This was created for educational purposes<br/>
  All responsibilities and disadvantages of using this program is for the user.
- If a method is not working, update it easily—we’ve got you covered!
  
 
 ## Language</br>
