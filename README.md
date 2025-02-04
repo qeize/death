@@ -15,8 +15,7 @@
 - Created for educational and cybersecurity research purposes. 
 - The user is fully responsible for any misuse.
 
-<p><b>🚀 Need an update?</b></p>  
-If a method is not working, update it easily—we’ve got you covered!
+<p><b>🚀 Need an update?</b></p>If a method is not working, update it easily—we’ve got you covered!
  
 
 ## Language</br>
