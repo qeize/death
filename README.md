@@ -9,8 +9,8 @@
 <p><b>DDoS Script (DDoS Panel) - Ultimate Multi-Bypass Tool</b></p>  
 </p>
  Bypass multiple protections with advanced attack methods:<br>(Cloudflare UAM, CAPTCHA, BFM, NoSec / DDoS Guard / Google Shield / V Shield / Amazon & more)<br/><br/>
- Don't attack any websites you don't own it<br/>
- This was created for educational purposes<br/>
+ Don't attack any websites you don't own it
+ This was created for educational purposes
  All responsibilities and disadvantages of using this program is for the user.
  
 
