@@ -1,4 +1,4 @@
-# https://github.com/chainski
+# https://github.com/qeize
 
 import os
 import time
@@ -24,8 +24,8 @@ os.system('cls')
 os.system('mode con: cols=120 lines=50')
 
 banner = '''
-Famod Service 
-Telegram : @nminh23
+Death Networks 
+Telegram : @keccy
 '''
 print(Colorate.Horizontal(Colors.purple_to_red, Center.XCenter(banner)))
 
